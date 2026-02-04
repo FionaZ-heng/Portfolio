@@ -28,7 +28,7 @@ const PROJECTS: Project[] = [
     status: "In progress",
     links: {
       repo: "https://github.com/FionaZ-heng/Sorting-Visualizer",
-      // demo: "https://sorting-visualizer.vercel.app" // 之后有了再加
+      demo: "https://sorting-visualizer-five-alpha.vercel.app"
     },
   },
   {
