@@ -13,7 +13,7 @@ type Project = {
   status?: "In progress" | "Shipped";
 };
 
-const PROJECTS = [
+const PROJECTS: Project[] = [
   {
     title: "Sorting Visualizer",
     subtitle: "Interactive Algorithms · Frontend",
