@@ -5,48 +5,63 @@ export default function Home() {
     <main className="min-h-screen bg-white px-6 py-14">
       <div className="mx-auto max-w-4xl space-y-12">
         {/* Hero */}
-        <header className="space-y-4">
-          <h1 className="text-4xl font-semibold tracking-tight">
-            Yutong (Fiona) Zheng
-          </h1>
+        <header className="space-y-5">
+          <div className="space-y-4">
+            <h1 className="text-4xl font-semibold tracking-tight">
+              Yutong (Fiona) Zheng
+            </h1>
 
-          <div className="space-y-1">
-            <p className="text-lg text-gray-700">
-              Computer Science @ Northeastern University
+            <div className="space-y-1">
+              <p className="text-lg text-gray-700">
+                Computer Science @ Northeastern University
+              </p>
+              <p className="text-lg text-gray-600">
+                Software Engineer · Frontend / Systems
+              </p>
+            </div>
+
+            <p className="text-sm text-gray-600">
+              Java · React · Next.js · TypeScript · Linux
             </p>
-            <p className="text-lg text-gray-600">
-              Software Engineer · Frontend / Systems
-            </p>
-          </div>
 
-          <p className="text-sm text-gray-600">
-            Java · React · Next.js · TypeScript · Linux
-          </p>
+            {/* About / Bio */}
+            <section className="max-w-2xl text-gray-700 leading-relaxed">
+              <p>
+                I’m a Computer Science student at Northeastern University focused on
+                software engineering and frontend systems. I enjoy turning complex logic
+                into clear, maintainable software—recently through an interactive sorting
+                visualizer and modular Java MVC projects—while emphasizing correctness,
+                clean abstractions, and readable code.
+              </p>
+            </section>
 
-          <div className="flex flex-wrap gap-4 text-sm">
-            <a className="underline" href="mailto:zheng.yuton@northeastern.edu">
-              Email
-            </a>
+            <div className="flex flex-wrap gap-4 text-sm">
+              <a className="underline" href="mailto:zheng.yuton@northeastern.edu">
+                Email
+              </a>
 
-            <a
-              className="underline"
-              href="https://github.com/FionaZ-heng"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
+              <a
+                className="underline"
+                href="https://github.com/FionaZ-heng"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
 
-            <Link className="underline" href="/projects">
-              Projects
-            </Link>
+              <Link className="underline" href="/projects">
+                Projects
+              </Link>
+            </div>
           </div>
         </header>
 
         {/* Featured */}
         <section className="space-y-4">
           <div className="space-y-2">
-            <h2 className="text-2xl font-semibold tracking-tight">Featured Project</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">
+              Featured Project
+            </h2>
             <p className="text-gray-600">
               One project I’m actively building and improving.
             </p>
@@ -55,7 +70,9 @@ export default function Home() {
           <div className="rounded-xl border bg-white p-6 shadow-sm transition hover:shadow-md">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
-                <h3 className="text-xl font-semibold tracking-tight">Sorting Visualizer</h3>
+                <h3 className="text-xl font-semibold tracking-tight">
+                  Sorting Visualizer
+                </h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Interactive Algorithms · Frontend
                 </p>
@@ -102,8 +119,24 @@ export default function Home() {
 
           <div className="grid gap-6">
             <div className="rounded-xl border bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold tracking-tight">Sanguine</h3>
-              <p className="mt-1 text-sm text-gray-600">Java MVC Application · OOP Design</p>
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <h3 className="text-xl font-semibold tracking-tight">Sanguine</h3>
+                  <p className="mt-1 text-sm text-gray-600">
+                    Java MVC Application · OOP Design
+                  </p>
+                </div>
+
+                <a
+                  className="text-sm underline"
+                  href="https://github.com/FionaZ-heng/cs3100"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Repo ↗
+                </a>
+              </div>
+
               <p className="mt-4 text-gray-700">
                 Object-oriented Java application emphasizing clean separation of concerns
                 and interface-based design.
@@ -111,8 +144,12 @@ export default function Home() {
             </div>
 
             <div className="rounded-xl border bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold tracking-tight">Single-Cycle RISC-V CPU</h3>
-              <p className="mt-1 text-sm text-gray-600">Computer Architecture · FPGA</p>
+              <h3 className="text-xl font-semibold tracking-tight">
+                Single-Cycle RISC-V CPU
+              </h3>
+              <p className="mt-1 text-sm text-gray-600">
+                Computer Architecture · FPGA
+              </p>
               <p className="mt-4 text-gray-700">
                 FPGA implementation of a single-cycle RISC-V processor with a custom datapath
                 and control logic.
