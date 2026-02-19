@@ -5,41 +5,49 @@ export default function Home() {
     <main className="min-h-screen bg-white px-6 py-14">
       <div className="mx-auto max-w-4xl space-y-12">
         {/* Hero */}
-        <header className="space-y-5">
+        <header className="space-y-6">
           <div className="space-y-4">
             <h1 className="text-4xl font-semibold tracking-tight">
               Yutong (Fiona) Zheng
             </h1>
 
-            <div className="space-y-1">
-              <p className="text-lg text-gray-700">
-                Computer Science @ Northeastern University
-              </p>
-              <p className="text-lg text-gray-600">
-                Software Engineer · Frontend / Systems
-              </p>
+            <p className="text-lg text-gray-700 max-w-2xl leading-relaxed">
+              I build interactive frontends and clean, testable systems — turning complex
+              logic into intuitive applications.
+            </p>
+
+            <div className="flex flex-wrap gap-3 pt-1">
+              <Link
+                href="/projects"
+                className="inline-flex items-center gap-1 rounded-lg bg-black px-4 py-2 text-sm text-white transition hover:opacity-90"
+              >
+                View Projects <span aria-hidden>→</span>
+              </Link>
+
+              <a
+                href="/resume.pdf"
+                className="inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition hover:bg-gray-50"
+              >
+                Download Resume <span aria-hidden>↗</span>
+              </a>
+
+              <a
+                href="mailto:zheng.yuton@northeastern.edu"
+                className="inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition hover:bg-gray-50"
+              >
+                Email Me
+              </a>
             </div>
 
             <p className="text-sm text-gray-600">
-              Java · React · Next.js · TypeScript · Linux
+              React · Next.js · TypeScript · Java · C · Linux · OOP / MVC · Systems
             </p>
 
-            {/* About / Bio */}
-            <section className="max-w-2xl text-gray-700 leading-relaxed">
-              <p>
-                I’m a Computer Science student at Northeastern University focused on
-                software engineering and frontend systems. I enjoy turning complex logic
-                into clear, maintainable software—recently through an interactive sorting
-                visualizer and modular Java MVC projects—while emphasizing correctness,
-                clean abstractions, and readable code.
-              </p>
-            </section>
+            <p className="text-sm text-gray-600 max-w-2xl">
+              Recent work: Sorting Visualizer (step-by-step execution, pause/resume) · Java MVC projects with clean interfaces and separation of concerns.
+            </p>
 
-            <div className="flex flex-wrap gap-4 text-sm">
-              <a className="underline" href="mailto:zheng.yuton@northeastern.edu">
-                Email
-              </a>
-
+            <div className="flex flex-wrap gap-4 text-sm pt-1">
               <a
                 className="underline"
                 href="https://github.com/FionaZ-heng"
@@ -49,12 +57,22 @@ export default function Home() {
                 GitHub
               </a>
 
+              <a
+                className="underline"
+                href="https://www.linkedin.com/in/yutong-fiona-zheng"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+
               <Link className="underline" href="/projects">
                 Projects
               </Link>
             </div>
           </div>
         </header>
+
 
         {/* Featured */}
         <section className="space-y-4">
