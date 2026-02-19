@@ -2,38 +2,44 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white px-6 py-14">
+    <main className="min-h-screen bg-white px-6 py-14 bg-glow">
       <div className="mx-auto max-w-4xl space-y-12">
         {/* Hero */}
         <header className="space-y-6">
           <div className="space-y-4">
-            <h1 className="text-4xl font-semibold tracking-tight">
+            <h1 className="text-4xl font-semibold tracking-tight text-gray-900">
               Yutong (Fiona) Zheng
             </h1>
+            <div className="name-underline" />
+            <div className="brand-badge">
+              Software Engineer · Frontend & Full-Stack
+            </div>
 
-            <p className="text-lg text-gray-700 max-w-2xl leading-relaxed">
-              I build interactive frontends and clean, testable systems — turning complex
-              logic into intuitive applications.
+            <p className="mt-6 text-lg text-gray-700 max-w-2xl leading-relaxed">
+              I’m a Computer Science student at Northeastern University
+              focused on building thoughtful, interactive web applications.
+              I enjoy turning complex systems into intuitive user experiences
+              while keeping code modular, testable, and scalable.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-1">
               <Link
                 href="/projects"
-                className="inline-flex items-center gap-1 rounded-lg bg-black px-4 py-2 text-sm text-white transition hover:opacity-90"
+                className="inline-flex items-center gap-1 rounded-lg bg-black px-4 py-2 text-sm text-white transition hover:opacity-90 btn-brand btn-lift btn-focus"
               >
                 View Projects <span aria-hidden>→</span>
               </Link>
 
               <a
                 href="/resume.pdf"
-                className="inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition hover:bg-gray-50"
+                className="inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition hover:bg-gray-50 btn-lift btn-focus"
               >
                 Download Resume <span aria-hidden>↗</span>
               </a>
 
               <a
                 href="mailto:zheng.yuton@northeastern.edu"
-                className="inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition hover:bg-gray-50"
+                className="inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition hover:bg-gray-50 btn-lift btn-focus"
               >
                 Email Me
               </a>
@@ -85,7 +91,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-xl border bg-white p-6 shadow-sm transition hover:shadow-md">
+          <div className="rounded-xl border bg-white p-6 shadow-sm card-hover">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <h3 className="text-xl font-semibold tracking-tight">
@@ -108,7 +114,7 @@ export default function Home() {
 
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                className="inline-flex items-center gap-1 rounded-lg bg-black px-4 py-2 text-sm text-white transition hover:opacity-90"
+                className="inline-flex items-center gap-1 rounded-lg bg-black px-4 py-2 text-sm text-white transition hover:opacity-90 btn-brand"
                 href="/projects"
               >
                 View project <span aria-hidden>→</span>
@@ -136,7 +142,7 @@ export default function Home() {
           </div>
 
           <div className="grid gap-6">
-            <div className="rounded-xl border bg-white p-6 shadow-sm">
+            <div className="rounded-xl border bg-white p-6 shadow-sm card-hover">
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <h3 className="text-xl font-semibold tracking-tight">Sanguine</h3>
@@ -161,7 +167,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="rounded-xl border bg-white p-6 shadow-sm">
+            <div className="rounded-xl border bg-white p-6 shadow-sm card-hover">
               <h3 className="text-xl font-semibold tracking-tight">
                 Single-Cycle RISC-V CPU
               </h3>
