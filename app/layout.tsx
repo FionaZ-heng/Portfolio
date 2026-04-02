@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Navbar";
+import GlobalEffects from "./GlobalEffects";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fiona Zheng | Software Engineer",   // 👈 顺便建议你改掉
+  title: "Fiona Zheng | Software Engineer",
   description: "Frontend and systems-focused software engineer building interactive applications.",
 };
 
@@ -25,10 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />     {/* 👈 这里加 */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Navbar />
+        <GlobalEffects />
         {children}
       </body>
     </html>
