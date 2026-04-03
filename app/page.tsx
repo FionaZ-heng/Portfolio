@@ -115,11 +115,11 @@ export default function Home() {
                 <Link href="/projects" className="paw-btn" style={{ background: "#1a1a1a", color: "#fff" }}>View Projects →</Link>
                 <a href="/resume.pdf" className="paw-btn" style={{ background: "#ffe4e6" }}>Resume ↗</a>
                 <a href="mailto:zheng.yuton@northeastern.edu" className="paw-btn" style={{ background: "#e0f2fe" }}>Email Me</a>
-                <Link href="/travel" className="paw-btn" style={{ background: "#fef3c7" }}>
-                  ✈️ Travel
-                </Link>
                 <Link href="/about" className="paw-btn" style={{ background: "#ffe4e6" }}>
                   🌸 About Me
+                </Link>
+                <Link href="/travel" className="paw-btn" style={{ background: "#fef3c7" }}>
+                  ✈️ Travel
                 </Link>
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function Home() {
             <h2 style={{ fontSize: "1.7rem", fontWeight: 800, color: "#2a2a2a", marginBottom: 6 }}>
               Featured Project
             </h2>
-            <p style={{ color: "#777", fontSize: 15 }}>One project I'm actively building and improving.</p>
+            <p style={{ color: "#777", fontSize: 15 }}>The project I'm most proud of building end-to-end.</p>
           </div>
 
           <div className="hand-border card-tilt" style={{
@@ -162,22 +162,23 @@ export default function Home() {
             <div style={{ flex: 1, minWidth: 240 }}>
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 10 }}>
                 <div>
-                  <h3 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#2a2a2a" }}>Sorting Visualizer</h3>
-                  <p style={{ fontSize: 13, color: "#888", marginTop: 2 }}>Interactive Algorithms · Frontend</p>
+                  <h3 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#2a2a2a" }}>DevCircle</h3>
+                  <p style={{ fontSize: 13, color: "#888", marginTop: 2 }}>Full-Stack Web Application · Real-Time</p>
                 </div>
-                <span className="tag-pill" style={{ background: "#fef3c7" }}>In progress</span>
+                <span className="tag-pill" style={{ background: "#dcfce7" }}>Shipped</span>
               </div>
 
               <p style={{ color: "#555", lineHeight: 1.7, marginBottom: 18, fontSize: 15 }}>
-                Step-by-step visualization of sorting algorithms with pause/resume controls
-                and state-driven UI updates. Built to be extensible for new algorithms and styles.
+                A skill-exchange platform for developers — teach what you know, learn what you want.
+                Built end-to-end with real-time chat, smart matching, and user profiles.
               </p>
 
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                <Link href="/projects" className="paw-btn" style={{ background: "#1a1a1a", color: "#fff" }}>
-                  View project →
-                </Link>
-                <a href="https://github.com/FionaZ-heng/Sorting-Visualizer" target="_blank" rel="noreferrer"
+                <a href="https://devcircle-sigma.vercel.app" target="_blank" rel="noreferrer"
+                  className="paw-btn" style={{ background: "#1a1a1a", color: "#fff" }}>
+                  Live Demo →
+                </a>
+                <a href="https://github.com/FionaZ-heng/devcircle" target="_blank" rel="noreferrer"
                   className="paw-btn" style={{ background: "#fff" }}>
                   Repo ↗
                 </a>
