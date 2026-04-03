@@ -13,6 +13,24 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
+    title: "DevCircle",
+    subtitle: "Full-Stack Web Application · Real-Time",
+    description: "A skill-exchange platform for developers — teach what you know, learn what you want. Built end-to-end with real-time chat, smart matching, and user profiles.",
+    bullets: [
+      "Built full-stack with React + TypeScript frontend and Node.js + Express backend, deployed on Vercel and Railway",
+      "Implemented real-time WebSocket chat and live notifications using Socket.io",
+      "Designed smart skill-matching algorithm that ranks users by skill compatibility",
+      "Added Cloudinary avatar upload, JWT authentication, skill ratings, and a personal stats dashboard with Recharts",
+    ],
+    tags: ["React", "TypeScript", "Node.js", "MongoDB", "Socket.io"],
+    tagColor: "#ffe4e6",
+    status: "Shipped",
+    links: {
+      demo: "https://devcircle-sigma.vercel.app",
+      repo: "https://github.com/FionaZ-heng/devcircle",
+    },
+  },
+  {
     title: "Sorting Visualizer",
     subtitle: "Interactive Algorithms · Frontend",
     description: "Step-by-step visualization of sorting algorithms with pause/resume controls and state-driven UI updates.",
