@@ -41,7 +41,7 @@ const PROJECTS: Project[] = [
     ],
     tags: ["React", "TypeScript", "Visualization"],
     tagColor: "#ffe4e6",
-    status: "In progress",
+    status: "Shipped",
     links: {
       repo: "https://github.com/FionaZ-heng/Sorting-Visualizer",
       demo: "https://sorting-visualizer-five-alpha.vercel.app",

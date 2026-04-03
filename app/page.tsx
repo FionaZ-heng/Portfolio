@@ -200,6 +200,34 @@ export default function Home() {
           </div>
 
           <div style={{ display: "grid", gap: 20 }}>
+            {/* Sorting Visualizer */}
+            <div className="hand-border card-tilt" style={{ background: "#fff", padding: "24px 28px" }}>
+              <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12, marginBottom: 10 }}>
+                <div>
+                  <h3 style={{ fontSize: "1.15rem", fontWeight: 800, color: "#2a2a2a" }}>Sorting Visualizer</h3>
+                  <p style={{ fontSize: 13, color: "#888", marginTop: 2 }}>Interactive Algorithms · Frontend</p>
+                </div>
+                <div style={{ display: "flex", gap: 10 }}>
+                  <a href="https://sorting-visualizer-five-alpha.vercel.app" target="_blank" rel="noreferrer"
+                    style={{ fontSize: 13, color: "#fda4af", fontWeight: 700, textDecoration: "underline", whiteSpace: "nowrap" }}>
+                    Demo ↗
+                  </a>
+                  <a href="https://github.com/FionaZ-heng/Sorting-Visualizer" target="_blank" rel="noreferrer"
+                    style={{ fontSize: 13, color: "#fda4af", fontWeight: 700, textDecoration: "underline", whiteSpace: "nowrap" }}>
+                    Repo ↗
+                  </a>
+                </div>
+              </div>
+              <p style={{ color: "#555", fontSize: 15, lineHeight: 1.65 }}>
+                Step-by-step visualization of sorting algorithms with pause/resume controls and state-driven UI updates.
+              </p>
+              <div style={{ marginTop: 12, display: "flex", gap: 8 }}>
+                {["React", "TypeScript", "Visualization"].map(t => (
+                  <span key={t} className="tag-pill" style={{ background: "#fef3c7", fontSize: 11 }}>{t}</span>
+                ))}
+              </div>
+            </div>
+
             {/* Sanguine */}
             <div className="hand-border card-tilt" style={{ background: "#fff", padding: "24px 28px" }}>
               <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12, marginBottom: 10 }}>
